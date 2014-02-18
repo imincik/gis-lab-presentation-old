@@ -1,12 +1,13 @@
 \documentclass[12pt]{beamer}
-\usetheme{Warsaw}
+\usetheme{Malmoe}
 \usepackage[utf8]{inputenc}
-\usepackage{amsmath}
-\usepackage{amsfonts}
-\usepackage{amssymb}
 \usepackage{graphicx}
 \usepackage{xcolor}
 \usepackage{wrapfig} % texlive-latex-extra package
+
+\definecolor{Cyan}{RGB}{0,141,184}
+\setbeamercolor{structure}{fg=Cyan}
+
 \author{Ivan Minčík}
 \title{GIS.lab}
 \subtitle{Open Source GIS office}
@@ -22,11 +23,8 @@
 	\titlepage
 \end{frame}
 
-%\begin{frame}
-%\tableofcontents
-%\end{frame}
 
-
+\section{Task}
 \begin{frame}{What does it take to build a small GIS office?}
 	\textbf{Conditions}
 	\begin{itemize}
@@ -58,6 +56,8 @@
 \end{frame}
 
 
+\section{Solution}
+\subsection{Legacy system}
 \begin{frame}{Legacy system}
 	\textbf{Server}
 	\begin{itemize}[<+->]
@@ -90,8 +90,8 @@
 
 \begin{frame}{Legacy system}
 	\begin{flushleft}
-		\textbf{\textcolor{red}{?} days, weeks, months} \\
-		\textbf{\textcolor{red}{?} EUR} \\
+		\textbf{\textcolor{Cyan}{?} days, weeks, months} \\
+		\textbf{\textcolor{Cyan}{?} EUR} \\
 	\end{flushleft}
 \end{frame}
 
@@ -101,17 +101,19 @@
 \end{frame}
 
 
+\subsection{GIS.lab}
 \begin{frame}{GIS.lab}
 	\begin{itemize}
 		\item One command to install server and clients
 	\end{itemize}
 	\begin{flushleft}
-		\textbf{\textcolor{red}{20} minutes} \\
-		\textbf{\textcolor{red}{0} EUR} \\
+		\textbf{\textcolor{Cyan}{20} minutes} \\
+		\textbf{\textcolor{Cyan}{0} EUR} \\
 	\end{flushleft}
 \end{frame}
 
 
+\subsection{GIS.lab Unit}
 \begin{frame}{GIS.lab Unit}
 	\begin{minipage}[\textheight]{\textwidth}
 	\begin{columns}[T]
@@ -121,8 +123,8 @@
 				\item Plug-and-play
 			\end{itemize}
 			\begin{flushleft}
-				\textbf{\textcolor{red}{0} minutes} \\
-				\textbf{\textcolor{red}{450} EUR} \\
+				\textbf{\textcolor{Cyan}{0} minutes} \\
+				\textbf{\textcolor{Cyan}{450} EUR} \\
 			\end{flushleft}
 		\end{column}
 		\begin{column}{0.5\textwidth}
@@ -213,6 +215,7 @@
 \end{frame}
 
 
+\section{Example}
 \begin{frame}{Example work flow}
 	Task: xxxx
 \end{frame}
@@ -223,6 +226,7 @@
 \end{frame}
 
 
+\section{About}
 \begin{frame}{About}
 	\begin{itemize}
 		\item Authors: Ivan Minčík, Marcel Dancák
