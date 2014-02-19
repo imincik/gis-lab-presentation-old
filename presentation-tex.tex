@@ -56,7 +56,7 @@
 \end{frame}
 
 
-\section{Solution}
+\section{Solutions}
 \subsection{Legacy system}
 \begin{frame}{Legacy system}
 	\textbf{Server}
@@ -116,7 +116,7 @@
 	\begin{minipage}[\textheight]{\textwidth}
 	\begin{columns}[T]
 		\begin{column}{0.5\textwidth}
-			\vspace{0.3\textheight}
+			\vspace{0.2\textheight}
 			Plug-and-play
 			\begin{flushleft}
 				\textbf{\textcolor{Cyan}{0} minutes} \\
@@ -135,12 +135,74 @@
 	\LARGE \textbf{How it works?}
 \end{frame}
 
-
-\begin{frame}
-	TODO: How it works 3 x image
+\section{How GIS.lab works}
+\subsection{Architecture}
+\begin{frame}{GIS.lab architecture}
+	\begin{center}
+		\includegraphics[keepaspectratio=true,height=0.4\textheight]{images/gislab-architecture.png}
+	\end{center}
+	\begin{columns}
+		\begin{column}{0.5\textwidth}
+			\textbf{GIS.lab server}
+			\begin{itemize}
+				\item automatic provisioning (Win, Lin, Mac)
+				\item network boot service
+				\item other services and data
+			\end{itemize}				
+    	\end{column}
+		\begin{column}{0.5\textwidth}
+			\textbf{GIS.lab client}
+			\begin{itemize}
+				\item boot from network
+				\item mount system and data
+				\item high performance, minimal server load
+			\end{itemize}
+		\end{column}
+	\end{columns}	
 \end{frame}
 
 
+\subsection{Physical client}
+\begin{frame}{Physical client}
+	\begin{center}
+		\includegraphics[keepaspectratio=true,height=0.5\textheight]{images/schema-physical-client.png}
+	\end{center}
+	\begin{columns}
+		\begin{column}{0.5\textwidth}
+			\begin{itemize}
+				\item original OS isn't accessible 
+			\end{itemize}				
+    	\end{column}
+		\begin{column}{0.5\textwidth}
+			\begin{itemize}
+				\item best performance
+			\end{itemize}
+		\end{column}
+	\end{columns}	
+\end{frame}
+
+
+\subsection{Virtual client}
+\begin{frame}{Virtual client}
+	\begin{center}
+		\includegraphics[keepaspectratio=true,height=0.3\textheight]{images/schema-virtual-client.png}
+	\end{center}
+	\begin{columns}
+		\begin{column}{0.5\textwidth}
+			\begin{itemize}
+				\item original OS and GIS.lab client runs side-by-side 
+			\end{itemize}				
+    	\end{column}
+		\begin{column}{0.5\textwidth}
+			\begin{itemize}
+				\item windowed or full screen mode
+			\end{itemize}
+		\end{column}
+	\end{columns}	
+\end{frame}
+
+
+\subsection{Features and benefits}
 \begin{frame}{Features and benefits}
 	\begin{itemize}
 		\item Open Source software (GNU GPL 3)
@@ -200,18 +262,19 @@
 \end{frame}
 
 
-\begin{frame}{Usage}
+\subsection{Utilization}
+\begin{frame}{Utilization}
 	\begin{itemize}
-		\item Teaching and studying platform for GIS and Unix technologies
-		\item Production environment for small GIS businesses
+		\item Desktop environment for small GIS businesses
+		\item Education
 		\item Crisis Mapping
 		\item GIS software development environment
-		\item Supercomputing
+		\item Parallel computing
 	\end{itemize}
 \end{frame}
 
 
-\section{Example}
+\section{Example work flow}
 \begin{frame}{Example work flow}
 	Task: xxxx
 \end{frame}
