@@ -1,0 +1,22 @@
+* GIS technologies can be used anywhere
+
+* So, why your favourite organization doesn't use them ?
+ - very hard and expensive to deploy complex GIS infrastructure
+ - hard and expensive to manage complex GIS infrastructure
+ - missing basic GIS knowledge
+ - missing data
+
+* Why your favourite organization doesn't use Open Source GIS ?
+ - missing time to try alternative technologies
+ - hard to evaluate it particular real world conditions
+
+* GIS.lab
+ - effective presentation of complex Open Source GIS
+ - instant deployment of GIS infrastructure
+ - no need of expensive hardware
+ - no licensing costs
+ - training, development and testing environment
+
+* FAQ
+ - what is a difference to OSGeo Live ?
+ - why we are developing our own web client ?
