@@ -20,3 +20,7 @@
 * FAQ
  - what is a difference to OSGeo Live ?
  - why we are developing our own web client ?
+
+
+* Other notes
+ - cheap and super fast deployment of small scale deployment
