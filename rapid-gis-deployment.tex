@@ -18,7 +18,7 @@
 
 \title{GIS.lab}
 \subtitle{rapid GIS office deployment}
-\author{Ivan Minčík (nick: imincik)}
+\author{Ivan Minčík (imincik)}
 %\setbeamercovered{transparent} 
 %\setbeamertemplate{navigation symbols}{} 
 %\logo{} 
@@ -44,12 +44,8 @@
 
 \begin{frame}{What is GIS.lab ?}
 	\begin{itemize}[<+->]
-		\item it is not a single application
-		\item automatically created and managed GIS infrastructure
-			\begin{itemize}[<+->]
-				\item automatically installed server
-				\item powerful plug-and-play client machines for LAN
-			\end{itemize}
+		\item NOT a single application
+		\item comprehensive GIS infrastructure
 		\item Open Source software
 	\end{itemize}
 \end{frame}
@@ -60,12 +56,25 @@
 		\item self containing and independent system
 		\item automatic deployment and management - plug-and-play
 		\item zero maintenance costs
-		\item usability in LAN (server and desktop clients)
-		\item usability in data center or cloud (server)
+		\item prepared for use in LAN (server and desktop clients)
+		\item prepared for use in data center or cloud (server)
+		\item stable GIS software stack with maintenance patches
 		\item good extensibility
 		\item rapid failure recovery	
 		\item very cheap
+		\item small in size to fit in a pocket
 	\end{itemize}
+\end{frame}
+
+
+\begin{frame}{GIS.lab architecture}
+	\begin{itemize}
+		\item automatically installed GIS.lab server
+		\item network booting, plug-and-play GIS.lab client machines
+	\end{itemize}
+	\begin{center}
+		\includegraphics[keepaspectratio=true,height=0.6\textheight]{images/gislab-architecture.png}
+	\end{center}
 \end{frame}
 
 
@@ -76,17 +85,6 @@
 		\item GIS data processing and analysis
 		\item GIS project publishing on web
 	\end{itemize}
-\end{frame}
-
-
-\begin{frame}{GIS.lab architecture}
-	\begin{itemize}
-		\item GIS.lab server - services
-		\item GIS.lab client - network boot
-	\end{itemize}
-	\begin{center}
-		\includegraphics[keepaspectratio=true,height=0.6\textheight]{images/gislab-architecture.png}
-	\end{center}
 \end{frame}
 
 
@@ -211,10 +209,21 @@
 \end{frame}
 
 
+\begin{frame}{Physical client configuration}
+	\begin{itemize}
+		\item enable 'legacy' boot an boot manager in BIOS
+		\item choose network boot (PXE) in boot manager (F12)
+	\end{itemize}
+	\begin{center}
+		\includegraphics[keepaspectratio=true,height=0.6\textheight]{images/real-world-example/client-physical-configuration.png}
+	\end{center}
+\end{frame}
+
+
 \begin{frame}{Virtual client configuration}
 	\begin{itemize}
 		\item create new VirtualBox machine with no hard drive
-		\item boot from network
+		\item configure to boot from network
 	\end{itemize}
 	\begin{center}
 		\includegraphics[keepaspectratio=true,height=0.6\textheight]{images/real-world-example/client-virtualbox-configuration.png}
@@ -383,19 +392,19 @@
 		\item drawing patches to overlay layer's features
 		\item print output creation
 		\item collaboration tools
-		\item high performance intelligent layers caching
+		\item high performance, intelligent layers caching
 	\end{itemize}
 \end{frame}
 
 
-\begin{frame}{GIS.lab Web search}
+\begin{frame}{Search in GIS.lab Web}
 	\begin{center}
 		\includegraphics[keepaspectratio=true,height=0.7\textheight]{images/rapid-gis-deployment/project-gislab-web-search.png}
 	\end{center}
 \end{frame}
 
 
-\begin{frame}{GIS.lab Web drawing}
+\begin{frame}{Drawing in GIS.lab Web}
 	\begin{center}
 		\includegraphics[keepaspectratio=true,height=0.7\textheight]{images/rapid-gis-deployment/project-gislab-web-drawing.png}
 	\end{center}
@@ -433,7 +442,7 @@
 \end{frame}
 
 
-\begin{frame}{GIS.lab Web in Amazon AWS}
+\begin{frame}{GIS.lab Web}
 	\begin{itemize}
 		\item copy project files on AWS server
 	\end{itemize}
@@ -455,10 +464,10 @@
 	\begin{itemize}
 		\item web management interface
 		\item multiple templates for GIS.lab Web
-		\item use Vagrant and VM only for local deployment
-		\item Docker
-		\item load balancing
-		\item WPS integration
+		\item deployment changes - use Vagrant and server VM only for local deployment
+		\item Docker integration
+		\item computing resources sharing between all GIS.lab machines
+		\item Web Processing Service (WPS) integration
 	\end{itemize}
 \end{frame}
 
@@ -492,7 +501,7 @@
 	\bigskip
 	Thanks for attention.
 	
-	Ivan Minčík, ivan.mincik@gmail.com
+	Ivan Minčík (imincik), ivan.mincik@gmail.com
 \end{frame}
 
 
