@@ -46,6 +46,7 @@
 	\begin{itemize}[<+->]
 		\item NOT a single application
 		\item comprehensive GIS infrastructure
+		\item suitable for small and middle size deployment
 		\item Open Source software
 	\end{itemize}
 \end{frame}
@@ -62,7 +63,7 @@
 		\item good extensibility
 		\item rapid failure recovery	
 		\item very cheap
-		\item small in size to fit in a pocket
+		\item small office server must fit in a pocket
 	\end{itemize}
 \end{frame}
 
@@ -124,7 +125,7 @@
 	
 	\textbf{Client}
 	\begin{itemize}
-		\item multiple machines with no OS \textbf{or} any OS installed
+		\item multiple machines with any \textbf{or} no OS installed
 	\end{itemize}
 \end{frame}
 
@@ -211,8 +212,8 @@
 
 \begin{frame}{Physical client configuration}
 	\begin{itemize}
-		\item enable 'legacy' boot an boot manager in BIOS
-		\item choose network boot (PXE) in boot manager (F12)
+		\item enable 'legacy' boot and 'boot manager' in BIOS
+		\item boot from LAN (PXE) in boot manager dialog (F12)
 	\end{itemize}
 	\begin{center}
 		\includegraphics[keepaspectratio=true,height=0.6\textheight]{images/real-world-example/client-physical-configuration.png}
@@ -223,7 +224,7 @@
 \begin{frame}{Virtual client configuration}
 	\begin{itemize}
 		\item create new VirtualBox machine with no hard drive
-		\item configure to boot from network
+		\item configure virtual machine to boot from network
 	\end{itemize}
 	\begin{center}
 		\includegraphics[keepaspectratio=true,height=0.6\textheight]{images/real-world-example/client-virtualbox-configuration.png}
@@ -260,7 +261,7 @@
 		\item create new SpatiaLite DB in SpatiaLite GUI
 	\end{itemize}
 	\begin{center}
-		\includegraphics[keepaspectratio=true,height=0.7\textheight]{images/real-world-example/project-create-db.png}
+		\includegraphics[keepaspectratio=true,height=0.7\textheight]{images/rapid-gis-deployment/project-create-db.png}
 	\end{center}
 \end{frame}
 
@@ -300,7 +301,7 @@
 \begin{frame}{Layers styling}
 	\begin{itemize}
 		\item set styles and map symbols to each layer
-		\item categorize layer by attribute values
+		\item set layer style by attribute values
 	\end{itemize}
 	\begin{center}
 		\includegraphics[keepaspectratio=true,height=0.6\textheight]{images/rapid-gis-deployment/project-layer-style.png}
